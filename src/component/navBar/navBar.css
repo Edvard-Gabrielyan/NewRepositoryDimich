@@ -1,0 +1,30 @@
+.nav {
+	height: 540px;
+	width: 200px;
+
+	background: #06B667;
+
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.nav-menu {
+	font-size: 20px;
+
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.nav-menu a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav-menu a.activ {
+	color: #000;
+}
+
+.nav-menu:last-child {
+	padding-top: 25px;
+}

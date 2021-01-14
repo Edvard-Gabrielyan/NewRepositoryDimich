@@ -1,0 +1,33 @@
+.post-header {
+	font-size: 30px;
+}
+
+.post {
+	height: 50px;
+	width: 100%;
+
+	background: #CFD5D1;
+
+	padding-left: 10px;
+	padding-top: 5px;
+	resize: none;
+}
+
+.area {
+	width: 700px;
+
+	margin-top: 10px;
+}
+
+textarea {
+	width: 550px;
+}
+
+button {
+	width: 70px;
+
+	color: #FFF;
+	background: #F00;
+
+	float: right;
+} 
