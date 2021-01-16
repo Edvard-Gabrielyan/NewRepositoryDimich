@@ -2,19 +2,28 @@ import React from 'react';
 import './myPost.css';
 import Post from './post/post.jsx';
 
-let MyPost = (props) => {
+let MyPost = () => {
+	let postData = [
+		{message:'Barev Arakel', likeCount:'Like 20'},
+		{message:'Arakel du xncor es', likeCount:'Like 40'}
+	]
+
+	let postElement = postData.map(messages => <Post message={messages.message} likeCount={messages.likeCount} />)
 
 	return (
 		<div>
 			<div>
 				<div className="post-header">My posts</div>
 				<div className="area">
-					<textarea></textarea>
-					<button>Send</button>
+					<div>
+						<textarea></textarea>
+					</div>
+					<div>
+						<button>Send</button>
+					</div>
 				</div>
 			</div>
-			<Post message='Barev Arakel' />
-			<Post message='Vonc es' />
+			{postElement}
 		</div>
 	);
 }

@@ -16,6 +16,9 @@
 .area {
 	width: 700px;
 
+	display: flex;
+	flex-direction: column;
+
 	margin-top: 10px;
 }
 
@@ -30,4 +33,6 @@ button {
 	background: #F00;
 
 	float: right;
+
+	margin-right: 150px;
 } 

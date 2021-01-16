@@ -1,0 +1,16 @@
+.dialogs {
+    display: flex;
+}
+
+.dialog-items {
+    width: 200px;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dialog a a.activ {
+    color: red;
+}

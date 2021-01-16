@@ -9,16 +9,16 @@ let NavBar = () => {
 				<NavLink to='/profile'>Profile</NavLink>
 			</div>
 			<div className="nav-menu">
-				<NavLink to='/dialog'>Messages</NavLink>
+				<NavLink to='/dialogs'>Messages</NavLink>
 			</div>
 			<div className="nav-menu">
-				<a>News</a>
+				News
 			</div>
 			<div className="nav-menu">
-				<a>Music</a>
+				Music
 			</div>
 			<div className="nav-menu">
-				<a>Settings</a>
+				Setings
 			</div>
 		</nav>
 	);
