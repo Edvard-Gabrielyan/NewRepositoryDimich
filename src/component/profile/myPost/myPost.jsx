@@ -2,13 +2,19 @@ import React from 'react';
 import './myPost.css';
 import Post from './post/post.jsx';
 
-let MyPost = () => {
-	let postData = [
-		{message:'Barev Arakel', likeCount:'Like 20'},
-		{message:'Arakel du xncor es', likeCount:'Like 40'}
-	]
+let MyPost = (props) => {
+	let postElement = props.messages.posts.map(messages => <Post message={messages.message} likeCount={messages.likeCount} />)
+	
+	let newPostElement = React.createRef();
+	let addPost = () => {
+		props.addStatePost();
+		props.updateNewText('');
+	}
 
-	let postElement = postData.map(messages => <Post message={messages.message} likeCount={messages.likeCount} />)
+	let onPostChange = () => {
+		let text = newPostElement.current.value;
+		props.updateNewText(text);
+	}
 
 	return (
 		<div>
@@ -16,10 +22,10 @@ let MyPost = () => {
 				<div className="post-header">My posts</div>
 				<div className="area">
 					<div>
-						<textarea></textarea>
+						<textarea ref={newPostElement} onChange={onPostChange} value={props.messages.newPostText} />
 					</div>
 					<div>
-						<button>Send</button>
+						<button onClick={addPost}>Send</button>
 					</div>
 				</div>
 			</div>
