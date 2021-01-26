@@ -8,9 +8,8 @@ let Profile = (props) => {
 		<div className="profile">
 			<ProfileInfo />
 			<MyPost messages={props.messages} 
-				addStatePost={props.addStatePost}
-				updateNewText={props.updateNewText}
-				/>
+				dispatch={props.dispatch}
+			/>
 		</div>
 	);
 };
