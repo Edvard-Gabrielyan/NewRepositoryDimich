@@ -1,30 +1,24 @@
 import React from 'react';
-import Header from './component/header/header.jsx';
-import NavBar from './component/navBar/navBar.jsx';
-import Profile from './component/profile/profile.jsx';
-import Dialog from './component/dialog/dialog.jsx';
-import { Route } from 'react-router-dom';
+import Header from './component/header/header';
+import NavBar from './component/navBar/navBar';
+import Profile from './component/profile/profile';
+import DialogContainer from './component/dialog/dialogContainer.jsx';
+import {Route} from 'react-router-dom';
+import UsersContainer from "./component/users/UsersContainer";
 import './App.css';
 
-function App(props) {
-	console.log(props.appState);
-	console.log(props.store);
-
-	return (
-		<div className="main">
-			<Header />
-			<NavBar />
-			<div className='content'>
-				<Route path='/dialogs' component={() => <Dialog
-					store={props.store}
-				/>} />
-				<Route path='/profile' component={() => <Profile
-					messages={props.appState.profilePage}
-					dispatch={props.dispatch}
-				/>} />
-			</div>
-		</div>
-	);
+function App() {
+    return (
+        <div className="main">
+            <Header/>
+            <NavBar/>
+            <div className='content'>
+                <Route path='/dialogs' component={() => <DialogContainer/>}/>
+                <Route path='/profile' component={() => <Profile/>}/>
+                <Route path='/users' component={() => <UsersContainer/>}/>
+            </div>
+        </div>
+    );
 }
 
 export default App;

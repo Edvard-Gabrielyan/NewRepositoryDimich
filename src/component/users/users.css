@@ -1,0 +1,68 @@
+.usersMain {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    margin: 0 0 15px 40px;
+}
+
+.usersImg {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+.usersImg img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.followBtn {
+    height: 30px;
+    width: 70px;
+    margin-left: 15px;
+}
+
+.followBtn button {
+    height: 20px;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+.leftPart {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.rightPart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.status, .name {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.status {
+    margin-top: 40px;
+}
+
+.location {
+    margin-right: 20px;
+}
+
+.country, .city {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.city {
+    margin-top: 20px;
+}
