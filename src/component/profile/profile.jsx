@@ -1,15 +1,14 @@
 import React from "react";
-import MyPost from "./myPost/myPost";
 import ProfileInfo from "./profileInfo/profileInfo";
 import "./profile.css";
+import MyPostContainer from "./myPost/myPostContainer";
 
 let Profile = (props) => {
+
 	return (
 		<div className="profile">
 			<ProfileInfo />
-			<MyPost messages={props.messages} 
-				dispatch={props.dispatch}
-			/>
+			<MyPostContainer />
 		</div>
 	);
 };
